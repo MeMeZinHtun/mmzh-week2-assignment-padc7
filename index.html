@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+var str = "AlbERt eINstEiN";
+var indexOfFirst = str.indexOf(' ');
+var str1 = str.slice(0, 1);
+var str2 = str.slice(1, indexOfFirst).toLowerCase();
+var str3 = str.slice((indexOfFirst + 1), (indexOfFirst + 2)).toUpperCase();
+var str4 = str.slice(indexOfFirst + 2).toLowerCase();
+
+document.getElementById("demo").innerHTML = str1 + str2 + " " + str3 + str4;
+</script>
+
+</body>
+</html>
